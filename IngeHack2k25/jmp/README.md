@@ -26,6 +26,7 @@ We are provided with the binary `out_patched`, no source code so let's decompile
 There are two things to notice, it's quite simple  
 Main  
 ![main decoompiled](./images/main.png)
+
 Basically, it is mapping a region and reading user input into it and then after passing it to a check function it changes the permissions of the segment to RW and finally it calls our input which obviously should be a shellcode.  
 Now for the check function
 
