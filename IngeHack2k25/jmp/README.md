@@ -28,7 +28,9 @@ Main
 ![main decoompiled](./images/main.png)
 Basically, it is mapping a region and reading user input into it and then after passing it to a check function it changes the permissions of the segment to RW and finally it calls our input which obviously should be a shellcode.  
 Now for the check function
+
 ![check decompiled](./images/check.png)
+
 So, this functions desassembles our shellcode and just makes sure that every instruction is a `jmp`.
 
 ### Exploitation
